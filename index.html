@@ -1,202 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shreeganth's Portfolio</title>
-    <!-- Including Bootstrap  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shreeganth S — Full Stack Developer</title>
+<meta name="description" content="Shreeganth S — Full Stack Developer. Chess engines, OCR pipelines, and RAG-powered chatbots." />
 
-    <!-- Adding Custom CSS above Bootstrap CSS -->
-    <link rel="stylesheet" href="./CSS/Style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Adding Text Font Styles Libre-baskerville and Oswald -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section class="hero-section">
-      <div class="container">
-        <h1>I'm Shreeganth</h1>
-        <h2>A Fullstack <span>Java</span> Developer</h2>
-      </div>
-    </section>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <section class="About-Me">
-      <div class="container my-3">
-        <img id="myimg" src="./Assets/my pic 2.jpg" alt="My image" />
-        <p>
-          "Aspiring Full Stack Developer skilled in Java, SQL, HTML, CSS, and
-          responsive web design. Passionate about creating scalable applications
-          and continuously learning modern technologies."
-        </p>
-      </div>
-    </section>
-    <section class="My-Skills">
-      <h2 class="text-center">My Skills</h2>
-      <div class="container">
-        <div class="row">
-          <img
-            src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"
-            alt="java"
-            height="60px"
-          />
+<div class="board-fade" aria-hidden="true"></div>
+
+<nav class="nav">
+  <a href="#top" class="nav__mark">SS</a>
+  <div class="nav__links">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav__cta">Get in touch</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="eyebrow mono">e4 <span class="eyebrow__sep">·</span> opening move</p>
+    <h1 class="hero__title">Shreeganth S</h1>
+    <p class="hero__role">Full&nbsp;Stack&nbsp;Developer</p>
+    <p class="hero__terminal mono"><span id="typed"></span><span class="cursor">▌</span></p>
+    <p class="hero__summary">
+      I build things end to end — responsive interfaces, REST APIs, and the occasional
+      chess engine that thinks three moves ahead. Recent CS graduate based in Chennai,
+      shipped work spanning OCR automation, RAG chatbots, and applied ML.
+    </p>
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary">View projects</a>
+      <a href="mailto:shreeganth.cse@gmail.com" class="btn btn--ghost">Email me</a>
+    </div>
+    <div class="hero__links mono">
+      <a href="https://github.com/Shreeganth6" target="_blank" rel="noopener">github.com/Shreeganth6</a>
+      <span>·</span>
+      <a href="tel:+918489115220">+91 84891 15220</a>
+      <span>·</span>
+      <span>Chennai, IN</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="experience" data-reveal>
+    <p class="eyebrow mono">Nf3 <span class="eyebrow__sep">·</span> development</p>
+    <h2 class="section__title">Experience</h2>
+
+    <div class="timeline">
+      <article class="timeline__item">
+        <div class="timeline__head">
+          <h3>Frontend Web Development Intern</h3>
+          <span class="mono timeline__date">Jan 2025 – Feb 2025</span>
         </div>
-        <div class="row">
-          <img
-            src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
-            alt="HTML"
-            height="60px"
-          />
+        <p class="timeline__org">MotionCut — Remote</p>
+        <ul>
+          <li>Converted a desktop-only post-login landing page into a fully responsive layout across mobile, tablet, and desktop breakpoints using HTML and CSS.</li>
+          <li>Migrated px-based spacing to rem units site-wide, enabling fluid scaling across three device categories (320px–1440px) without layout breakage.</li>
+        </ul>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__head">
+          <h3>Software Engineer Intern</h3>
+          <span class="mono timeline__date">Feb 2024 – Mar 2024</span>
         </div>
-        <div class="row">
-          <img
-            src="https://www.vectorlogo.zone/logos/w3_css/w3_css-official.svg"
-            alt="CSS"
-            height="60px"
-          />
+        <p class="timeline__org">Trios Technology — Chennai</p>
+        <ul>
+          <li>Engineered a Java–SQL data layer for a Vendor Management System, handling CRUD operations across 5 relational tables and 5,000+ vendor records.</li>
+          <li>Designed and maintained a normalized MySQL schema, reducing query redundancy across vendor data retrieval workflows.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--panel" id="projects" data-reveal>
+    <p class="eyebrow mono">Qxd5 <span class="eyebrow__sep">·</span> capture</p>
+    <h2 class="section__title">Projects</h2>
+
+    <div class="projects">
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>Full Stack Hybrid Chess Engine</h3>
+          <a href="https://github.com/Shreeganth6/Full-Stack-Hybrid-Chess-Engine" class="project-card__link mono" aria-label="View source on GitHub">GitHub ↗</a>
         </div>
-        <div class="row">
-          <img
-            src="./Assets/bootstrap-logo.png"
-            alt="Bootstrap"
-            height="60px"
-          />
+        <p class="project-card__stack mono">Python · PyTorch · React · NumPy · FastAPI</p>
+        <ul>
+          <li>Built a custom position-evaluation function covering piece development, king safety, and queen activity — 850 Elo on Chess.com.</li>
+          <li>Trained a PyTorch evaluation model on 1,000+ PGN games pulled via the Chess.com REST API, wired into the engine's move-selection pipeline.</li>
+          <li>Set minimax search depth to 3 with alpha-beta pruning, cutting average move computation time for a smoother UX.</li>
+        </ul>
+        <div class="eval-bar" role="img" aria-label="Engine strength: 850 Elo">
+          <div class="eval-bar__track">
+            <div class="eval-bar__fill" style="--fill: 62%"></div>
+          </div>
+          <div class="eval-bar__labels mono">
+            <span>Elo 850</span>
+            <span>depth 3</span>
+            <span>α-β pruning</span>
+          </div>
         </div>
-        <div class="row">
-          <img
-            src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg"
-            alt="tailwind css"
-            height="60px"
-          />
+        <div class="tag-row mono chess">
+          <span class="tag">CNN</span>
+          <span class="tag">minimax</span>
+          <span class="tag">Alpha Beta Pruning</span>
+          <span class="tag">Deep Learning</span>
         </div>
-        <div class="row">
-          <img
-            src=" https://www.vectorlogo.zone/logos/python/python-ar21.svg"
-            alt="Python"
-            height="60px"
-          />
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>Mobile Travel Expense Tracker</h3>
+          <a href="https://github.com/Shreeganth6/Travel-Ledger" class="project-card__link mono" aria-label="View source on GitHub">GitHub ↗</a>
         </div>
-        <div class="row">
-          <img
-            src=" https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"
-            alt="javascript"
-            height="60px"
-          />
+        <p class="project-card__stack mono">React Native · Node · Express · MySQL · Python</p>
+        <ul>
+          <li>Built a cross-platform expense tracker (React Native + Node/Express) for logging, categorizing, and monitoring trip expenses on the go.</li>
+          <li>Integrated Tesseract.js OCR with grayscale preprocessing to pull text straight from receipt photos, cutting manual entry entirely.</li>
+          <li>Shipped an AI trip chatbot on a Flask microservice using Llama-3.1 via Groq and a ChromaDB vector store — RAG for context-aware, personalized answers.</li>
+        </ul>
+        <div class="tag-row mono">
+          <span class="tag">OCR</span>
+          <span class="tag">RAG</span>
+          <span class="tag">ChromaDB</span>
+          <span class="tag">Groq · Llama-3.1</span>
         </div>
-        <div class="row">
-          <img
-            src=" https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg"
-            alt="mysql"
-            height="60px"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="Experience">
-      <h2 class="text-center mt-5">Experience</h2>
-      <div class="container">
-        <div class="row mx-3">
-          <h3 class="mt-5">Trios Technologies</h3>
-          <h4>Web Development Intern</h4>
-          <ul>
-            <li>
-              <span>Contributed to the development</span> of a medical
-              appointment booking application using Java and React.
-            </li>
-            <li>
-              <span>Developed</span> backend features with JWT-based
-              authentication.
-            </li>
-            <li>
-              <span>Built</span> REST APIs and connected them with PostgreSQL
-              for appointment booking management.
-            </li>
-            <li>
-              <span>Used</span> Tesseract OCR to automate medical record text
-              extraction with 90%+ accuracy.
-            </li>
-            <li>
-              <span>Worked on</span> handling concurrent booking requests using
-              database locking techniques.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="container my-1">
-        <div class="row mx-3">
-          <h3 class="mt-5">MotionCut</h3>
-          <h4>Frontend Web Development Intern</h4>
-          <ul>
-            <li>
-              <span>Developed and maintained</span> web page layouts using HTML
-              and CSS.
-            </li>
-            <li>
-              <span>Implemented</span> responsive user interfaces to improve
-              usability across different devices.
-            </li>
-            <li>
-              <span>Gained hands-on experience</span> in frontend development
-              concepts and web design practices.
-            </li>
-            <li>
-              <span>Debugged and resolved</span> layout and styling issues to
-              enhance user experience across browsers.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="container mt-1 mb-3">
-        <div class="row mx-3">
-          <h3 class="mt-5">Mindful AI Technologies</h3>
-          <h4>Mobile App Development Intern</h4>
-          
-            <ul>
-              <li>
-                <span>Contributed to the development</span> of an expense
-                tracking application using React Native and MySQL.
-              </li>
-              <li>
-                <span>Implemented</span> user authentication and group expense
-                management using JWT.
-              </li>
-              <li>
-                <span>Worked on</span> an <span>AI-assisted</span> financial
-                feature using Python, Flask, and Llama-3.
-              </li>
-              <li>
-                <span>Built</span> an <span>OCR-based</span> expense entry
-                feature using Tesseract.js, reducing manual logging time by
-                <span>70%</span>.
-              </li>
-            </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="skills" data-reveal>
+    <p class="eyebrow mono">O-O <span class="eyebrow__sep">·</span> castled, king safe</p>
+    <h2 class="section__title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 class="mono">Languages</h3>
+        <div class="tag-row">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript (ES6+)</span>
         </div>
       </div>
-    </section>
-    <section class="projects">
-      <h2 class="text-center mt-5">Projects</h2>
-      <div class="container"></div>
-    </section>
-  </body>
+      <div class="skill-group">
+        <h3 class="mono">Frontend</h3>
+        <div class="tag-row">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Flexbox / Grid</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Backend</h3>
+        <div class="tag-row">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Libraries &amp; Frameworks</h3>
+        <div class="tag-row">
+          <span class="tag">React Native</span>
+          <span class="tag">PyTorch</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Tools</h3>
+        <div class="tag-row">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Postman</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Canva</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--panel" id="education" data-reveal>
+    <p class="eyebrow mono">1.e4 e5 <span class="eyebrow__sep">·</span> opening theory</p>
+    <h2 class="section__title">Education</h2>
+    <div class="edu-card">
+      <div class="timeline__head">
+        <h3>B.E. Computer Science and Engineering</h3>
+        <span class="mono timeline__date">Sep 2022 – Jul 2026</span>
+      </div>
+      <p class="timeline__org">Meenakshi Sundararajan Engineering College</p>
+      <p class="edu-card__meta mono">CGPA 7.92 / 10.0 · Recently Graduated</p>
+      <p class="edu-card__coursework">Coursework: Data Structures &amp; Algorithms, Agile Development, AI and Machine Learning.</p>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact" data-reveal>
+    <p class="eyebrow mono">1-0 <span class="eyebrow__sep">·</span> let's talk</p>
+    <h2 class="section__title">Get in touch</h2>
+    <p class="contact__text">
+      Open to full-stack and frontend roles. If something above looks like a fit,
+      I'd like to hear from you.
+    </p>
+    <div class="contact__actions">
+      <a href="mailto:shreeganth.cse@gmail.com" class="btn btn--primary">shreeganth.cse@gmail.com</a>
+      <a href="https://github.com/Shreeganth6" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/shreeganth/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">Shreeganth S · Chennai · Full Stack Developer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
